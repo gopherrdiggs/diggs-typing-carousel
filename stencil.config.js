@@ -1,5 +1,5 @@
 exports.config = {
-  namespace: 'mycomponent',
+  namespace: 'diggs-typing-carousel',
   outputTargets:[
     { 
       type: 'dist' 

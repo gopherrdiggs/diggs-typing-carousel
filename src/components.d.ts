@@ -13,9 +13,12 @@ declare global {
   }
   namespace JSXElements {}
 
+  interface HTMLElement {
+    componentOnReady?: () => Promise<this | null>;
+  }
+
   interface HTMLStencilElement extends HTMLElement {
     componentOnReady(): Promise<this>;
-    componentOnReady(done: (ele?: this) => void): void;
 
     forceUpdate(): void;
   }
@@ -27,33 +30,33 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface MyComponent {
-      'first': string;
-      'last': string;
+    interface DiggsTypingCarousel {
+      'textList': string;
+      'waitSeed': number;
     }
   }
 
-  interface HTMLMyComponentElement extends StencilComponents.MyComponent, HTMLStencilElement {}
+  interface HTMLDiggsTypingCarouselElement extends StencilComponents.DiggsTypingCarousel, HTMLStencilElement {}
 
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  var HTMLDiggsTypingCarouselElement: {
+    prototype: HTMLDiggsTypingCarouselElement;
+    new (): HTMLDiggsTypingCarouselElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'diggs-typing-carousel': HTMLDiggsTypingCarouselElement;
   }
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'diggs-typing-carousel': HTMLDiggsTypingCarouselElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'my-component': JSXElements.MyComponentAttributes;
+      'diggs-typing-carousel': JSXElements.DiggsTypingCarouselAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
-      'first'?: string;
-      'last'?: string;
+    export interface DiggsTypingCarouselAttributes extends HTMLAttributes {
+      'textList'?: string;
+      'waitSeed'?: number;
     }
   }
 }

@@ -1,7 +1,7 @@
 {
-  "name": "my-component",
+  "name": "diggs-typing-carousel",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Typing carousel web component based on Stencil.",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -27,14 +27,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "git+https://github.com/gopherrdiggs/diggs-typing-carousel.git"
   },
-  "author": "Ionic Team",
+  "author": "Geoffrey Rodgers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/gopherrdiggs/diggs-typing-carousel"
   },
-  "homepage": "https://github.com/ionic-team/stencil",
+  "homepage": "https://github.com/gopherrdiggs/diggs-typing-carousel",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
