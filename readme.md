@@ -8,6 +8,10 @@ This is a Stencil-based web component that can be used on websites for the typin
 <h1>Here is my awesome list of <diggs-typing-carousel text-list='[ "gizmos.", "widgets.", "thingamajigs!"  ]'/></h1>
 ```
 
+# Demo
+
+![diggs-typing-carousel-demo](https://gopherrdiggs.blob.core.windows.net/diggs/diggs-typing-carousel-demo.gif)
+
 # Webcomponent Attributes
 
 * *text-list* = array of strings to type out and delete
