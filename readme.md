@@ -2,17 +2,17 @@
 
 This is a Stencil-based web component that can be used on websites for the typing and backspace effect that works with a supplied list of strings.
 
-# Example Usage
+### Example Usage
 
 ```html
 <h1>Here is my awesome list of <diggs-typing-carousel text-list='[ "gizmos.", "widgets.", "thingamajigs!"  ]'/></h1>
 ```
 
-# Demo
+### Demo
 
 ![diggs-typing-carousel-demo](https://gopherrdiggs.blob.core.windows.net/diggs/diggs-typing-carousel-demo.gif)
 
-# Webcomponent Attributes
+## Webcomponent Attributes
 
 * *text-list* = array of strings to type out and delete
 * *wait-seed* = the seed time (in milliseconds) between typing characters
